@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "karla";
+  src: url(/fonts/Karla-VariableFont_wght.ttf);
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  font-family: "karla";
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#block-1 {
+  background-color: white;
+  grid-column: span 2;
+}
+
+#block-2 {
+  background-color: hsl(179, 62%, 43%);
+}
+
+#block-3 {
+  background-color: hsl(179, 66%, 49%);
+}
+
+.text {
+  padding: 1.2rem;
+}
+.text p {
+  font-size: 1rem;
+}
+button {
+  font-family: "karla";
+  background-color: hsl(71, 66%, 51%);
+  padding: 1rem 4rem 1rem 4rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+@media (max-width: 450px) {
+  body {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: none;
+  }
+}
