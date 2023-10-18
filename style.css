@@ -8,11 +8,11 @@ body {
   font-family: "karla";
 }
 main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
 
 #block-1 {
   background-color: white;
