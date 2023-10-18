@@ -6,46 +6,62 @@ body {
   background-color: hsl(204, 43%, 93%);
   font-size: 16px;
   font-family: "karla";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 65%;
+}
 
 #block-1 {
   background-color: white;
   grid-column: span 2;
+  border-top-left-radius: 8px;
+  padding: 1rem 1rem 2.5rem 2rem
 }
-
+#block-1 p {
+  color: grey;;
+}
 #block-2 {
-  background-color: hsl(179, 62%, 43%);
+  background-color: hsl(179, 39%, 45%);
+  border-bottom-left-radius: 8px;
+  padding: 1rem 1rem 2.5rem 2rem
+
 }
 
 #block-3 {
-  background-color: hsl(179, 66%, 49%);
+  background-color: hsl(179, 51%, 54%);
+  border-bottom-right-radius: 8px;
+  padding: 1rem 1rem 2.5rem 2rem
+
 }
 
-.text {
-  padding: 1.2rem;
-}
 .text p {
   font-size: 1rem;
 }
 button {
   font-family: "karla";
   background-color: hsl(71, 66%, 51%);
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 1rem 6rem 1rem 6rem;
   color: white;
   font-weight: 700;
   border-radius: 5px;
 }
 
-@media (max-width: 450px) {
-  body {
+@media (max-width: 700px) {
+  main {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  #block-1 {
+    grid-column: span 1;
   }
 }
