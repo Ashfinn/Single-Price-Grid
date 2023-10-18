@@ -23,35 +23,40 @@ main {
   background-color: white;
   grid-column: span 2;
   border-top-left-radius: 8px;
-  padding: 1rem 1rem 2.5rem 2rem
+  padding: 1rem 1rem 2.5rem 2rem;
 }
 #block-1 p {
-  color: grey;;
+  color: grey;
 }
 #block-2 {
   background-color: hsl(179, 39%, 45%);
   border-bottom-left-radius: 8px;
-  padding: 1rem 1rem 2.5rem 2rem
-
+  padding: 1rem 1rem 2rem 2rem;
 }
 
 #block-3 {
   background-color: hsl(179, 51%, 54%);
   border-bottom-right-radius: 8px;
-  padding: 1rem 1rem 2.5rem 2rem
-
+  padding: 1rem 1rem 2rem 2rem;
 }
 
 .text p {
   font-size: 1rem;
 }
 button {
+  margin-top: 1rem;
   font-family: "karla";
-  background-color: hsl(71, 66%, 51%);
+  background-color: hsla(71, 100%, 52%, 0.726);
   padding: 1rem 6rem 1rem 6rem;
   color: white;
   font-weight: 700;
   border-radius: 5px;
+  white-space: nowrap;
+  border-color: transparent;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: rgb(159, 172, 48);
 }
 
 @media (max-width: 700px) {
@@ -60,8 +65,12 @@ button {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
     width: 90%;
+    max-height: 100vh;
   }
   #block-1 {
     grid-column: span 1;
+  }
+  #block-2 {
+    border-bottom-left-radius: 0;
   }
 }
